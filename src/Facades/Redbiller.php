@@ -1,13 +1,11 @@
 <?php
 
-namespace :vendor_namespace;
+namespace LPMatrix\Redbiller\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-/**
- * @see \:vendor_namespace\Skeleton\SkeletonClass
- */
-class :studly_package_nameFacade extends Facade
+
+class Redbiller extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -16,6 +14,6 @@ class :studly_package_nameFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return ':package_name';
+        return 'laravel-redbiller';
     }
 }
