@@ -94,4 +94,37 @@ class Redbiller
         return json_decode($this->response->getBody(), true);
     }
 
+    public static function initiateTransaction($data)
+    {
+        return (new self)->setHttpResponse('/1.0/payout/bank-transfer/create', 'POST', $data)->getResponse();
+    }
+
+    public static function retryTransaction($data)
+    {
+        return (new self)->setHttpResponse('/1.0/payout/bank-transfer/retry', 'POST', $data)->getResponse();
+    }
+
+    public static function suggestBanks($account_no)
+    {
+        $data = ['account_no' => $account_no];
+        return (new self)->setHttpResponse('/1.0/payout/bank-transfer/banks/suggest', 'POST', $data)->getResponse();
+    }
+
+    public static function getTransactions($data)
+    {
+        return (new self)->setHttpResponse('/1.0/payout/bank-transfer/bank-transfer/list', 'POST', $data)->getResponse();
+    }
+
+    public static function getRetriedTrail($reference)
+    {
+        $data = ['reference' => $reference];
+        return (new self)->setHttpResponse('/1.0/payout/bank-transfer/get-retried-trail', 'GET', $data)->getResponse();
+    }
+
+    public static function verifyTransaction($reference)
+    {
+        $data = ['reference' => $reference];
+        return (new self)->setHttpResponse('/1.0/payout/bank-transfer/banks/status', 'POST', $data)->getResponse();
+    }
+
 }
