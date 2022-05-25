@@ -1,10 +1,10 @@
 <?php
 
-namespace :vendor_namespace;
+namespace LPMatrix\Redbiller;
 
 use Illuminate\Support\ServiceProvider;
 
-class :studly_package_nameServiceProvider extends ServiceProvider
+class RedbillerServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -22,7 +22,7 @@ class :studly_package_nameServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             // Publishing the config.
             $this->publishes([
-                __DIR__.'/../config/config.php' => config_path(':package_name.php'),
+                __DIR__.'/../config/config.php' => config_path('redbiller.php'),
             ], 'config');
 
             // Publishing the views.
@@ -51,11 +51,11 @@ class :studly_package_nameServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', ':package_name');
+        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'redbiller');
 
         // Register the main class to use with the facade
-        $this->app->singleton(':package_name', function () {
-            return new :studly_package_name;
+        $this->app->singleton('laravel-redbiller', function () {
+            return new laravel-redbiller;
         });
     }
 }
