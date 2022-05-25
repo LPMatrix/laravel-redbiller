@@ -9,4 +9,6 @@ return [
      *
      */
     'secretKey' => getenv('REDBILLER_SECRET_KEY'),
+
+    'paymentUrl' => getenv('REDBILLER_URL')
 ];
