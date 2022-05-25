@@ -1,10 +1,10 @@
-# Very short description of the package
+# Laravel Redbiller Package
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/LPMatrix/laravel-redbiller.svg?style=flat-square)](https://packagist.org/packages/LPMatrix/laravel-redbiller)
 [![Total Downloads](https://img.shields.io/packagist/dt/LPMatrix/laravel-redbiller.svg?style=flat-square)](https://packagist.org/packages/LPMatrix/laravel-redbiller)
 ![GitHub Actions](https://github.com/LPMatrix/laravel-redbiller/actions/workflows/main.yml/badge.svg)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+A Laravel Package for working with Redbiller seamlessly
 
 ## Installation
 
@@ -14,10 +14,29 @@ You can install the package via composer:
 composer require LPMatrix/laravel-redbiller
 ```
 
-## Usage
+## Configuration
+
+You can publish the configuration file using this command:
+
+```bash
+php artisan LPMatrix:publish --provider="LPMatrix\Redbiller\RedbillerServiceProvider"
+```
+
+A configuration-file named `redbiller.php` with some sensible defaults will be placed in your `config` directory:
 
 ```php
-// Usage description here
+<?php
+
+return [
+
+    /**
+     * Secret Key From Redbiller Dashboard
+     *
+     */
+    'secretKey' => getenv('REDBILLER_SECRET_KEY')
+
+];
+```
 ```
 
 ### Testing
@@ -45,7 +64,7 @@ If you discover any security related issues, please email :author_email instead 
 
 ## License
 
-The :license_shortname. Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
 ## Laravel Package Boilerplate
 
