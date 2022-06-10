@@ -11,7 +11,7 @@ A Laravel Package for working with Redbiller seamlessly
 You can install the package via composer:
 
 ```bash
-composer require LPMatrix/laravel-redbiller
+composer require lpmatrix/laravel-redbiller
 ```
 
 ## Configuration
