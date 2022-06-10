@@ -94,6 +94,7 @@ class Redbiller
         return json_decode($this->response->getBody(), true);
     }
 
+    //PAYOUT
     public static function initiateTransaction($data)
     {
         return (new self)->setHttpResponse('/1.0/payout/bank-transfer/create', 'POST', $data)->getResponse();
@@ -127,4 +128,25 @@ class Redbiller
         return (new self)->setHttpResponse('/1.0/payout/bank-transfer/banks/status', 'POST', $data)->getResponse();
     }
 
+    //USSD
+    public static function createUSSDCode($data)
+    {
+        return (new self)->setHttpResponse('/1.0/collections/USSD/create', 'POST', $data)->getResponse();
+    }
+
+    public static function supportedUSSDBanks()
+    {
+        return (new self)->setHttpResponse('/1.0/collections/USSD/get-supported-banks', 'GET', $data)->getResponse();
+    }
+
+    public static function verifyUSSDTransaction($reference)
+    {
+        $data = ['reference' => $reference];
+        return (new self)->setHttpResponse('/1.0/collections/USSD/payments/verify', 'POST', $data)->getResponse();
+    }
+
+    public static function getUSSDTransactions($data)
+    {
+        return (new self)->setHttpResponse('/1.0/collections/USSD/payments/list', 'GET', $data)->getResponse();
+    }
 }
