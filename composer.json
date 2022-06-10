@@ -1,5 +1,5 @@
 {
-    "name": ":lpmatrix/laravel-redbiller",
+    "name": "lpmatrix/laravel-redbiller",
     "description": "A laravel package for Redbiller",
     "keywords": [
         ":LPMatrix",

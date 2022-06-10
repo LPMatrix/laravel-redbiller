@@ -55,7 +55,7 @@ class RedbillerServiceProvider extends ServiceProvider
 
         // Register the main class to use with the facade
         $this->app->singleton('laravel-redbiller', function () {
-            return new laravel-redbiller;
+            return new redbiller;
         });
     }
 }
