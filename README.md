@@ -2,7 +2,6 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/LPMatrix/laravel-redbiller.svg?style=flat-square)](https://packagist.org/packages/LPMatrix/laravel-redbiller)
 [![Total Downloads](https://img.shields.io/packagist/dt/LPMatrix/laravel-redbiller.svg?style=flat-square)](https://packagist.org/packages/LPMatrix/laravel-redbiller)
-![GitHub Actions](https://github.com/LPMatrix/laravel-redbiller/actions/workflows/main.yml/badge.svg)
 
 A Laravel Package for working with Redbiller seamlessly
 
