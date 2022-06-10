@@ -47,6 +47,38 @@ return [
 composer test
 ```
 
+## Functionalities
+
+### BANK TRANSFER
+#### initiateTransaction
+#### retryTransaction
+#### suggestBanks
+#### getTransactions
+#### getRetriedTrail
+#### verifyTransaction
+
+### PAYMENT SUB-ACCOUNT
+### ONE-TIME PAYMENT SUB-ACCOUNT
+### USSD PAYMENTS
+#### createUSSDCode
+#### supportedUSSDBanks
+#### verifyUSSDTransaction
+#### getUSSDTransactions
+
+### POINT OF SALE
+### CARDLESS WITHDRAWAL
+### MOBILE AIRTIME
+### MOBILE AIRTIME PIN GENERATION
+### MOBILE DATA
+### WIFI INTERNET
+### CABLE TV
+### ELECTRICITY
+### BETTING
+### KNOW YOUR CUSTOMER
+### BANK SETTLEMENT
+### ONE-TIME PASSWORD
+### MISCELLANEOUS
+
 ### Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
