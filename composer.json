@@ -2,8 +2,19 @@
     "name": "lpmatrix/laravel-redbiller",
     "description": "A laravel package for Redbiller",
     "keywords": [
-        ":LPMatrix",
-        ":laravel-redbiller"
+        "LPMatrix",
+        "laravel-redbiller",
+        "php",
+        "github",
+        "laravel",
+        "Open Source",
+        "payments",
+        "subscription",
+        "paystack",
+        "redbiller.com",
+        "laravel 6",
+        "laravel 7",
+        "laravel 8"
     ],
     "homepage": "https://github.com/LPMatrix/laravel-redbiller",
     "license": "MIT",
