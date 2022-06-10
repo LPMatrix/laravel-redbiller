@@ -33,12 +33,11 @@ return [
      * Secret Key From Redbiller Dashboard
      *
      */
-    'secretKey' => getenv('REDBILLER_SECRET_KEY')
+    'secretKey' => getenv('REDBILLER_SECRET_KEY');
 
-    'paymentUrl' => getenv('REDBILLER_URL')
+    'paymentUrl' => getenv('REDBILLER_URL');
 
 ];
-```
 ```
 
 ### Testing
