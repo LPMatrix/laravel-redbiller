@@ -45,37 +45,9 @@ return [
 composer test
 ```
 
-## Functionalities
+## Documentation
 
-### BANK TRANSFER
-#### initiateTransaction
-#### retryTransaction
-#### suggestBanks
-#### getTransactions
-#### getRetriedTrail
-#### verifyTransaction
-
-### PAYMENT SUB-ACCOUNT
-### ONE-TIME PAYMENT SUB-ACCOUNT
-### USSD PAYMENTS
-#### createUSSDCode
-#### supportedUSSDBanks
-#### verifyUSSDTransaction
-#### getUSSDTransactions
-
-### POINT OF SALE
-### CARDLESS WITHDRAWAL
-### MOBILE AIRTIME
-### MOBILE AIRTIME PIN GENERATION
-### MOBILE DATA
-### WIFI INTERNET
-### CABLE TV
-### ELECTRICITY
-### BETTING
-### KNOW YOUR CUSTOMER
-### BANK SETTLEMENT
-### ONE-TIME PASSWORD
-### MISCELLANEOUS
+FInd the documentation for this package here: https://lpmatrix.github.io/laravel-redbiller-example/#/
 
 ### Changelog
 
@@ -87,7 +59,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ### Security
 
-If you discover any security related issues, please email :author_email instead of using the issue tracker.
+If you discover any security related issues, please email mubaraqsanusi908@gmail.com instead of using the issue tracker.
 
 ## Credits
 
