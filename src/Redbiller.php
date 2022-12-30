@@ -166,6 +166,11 @@ class Redbiller
         return (new self)->setHttpResponse('/1.0/bills/data/plans/purchase/create', 'POST', $data)->getResponse();
     }
 
+    public static function dataPlans($data)
+    {
+        return (new self)->setHttpResponse('/1.0/bills/data/plans/list', 'POST', $data)->getResponse();
+    }
+
     public static function verifyDataPurchase($data)
     {
         return (new self)->setHttpResponse('/1.0/bills/data/plans/purchase/status', 'POST', $data)->getResponse();
@@ -181,9 +186,19 @@ class Redbiller
         return (new self)->setHttpResponse('/1.4/bills/betting/account/payment/status', 'POST', $data)->getResponse();
     }
 
+    public static function bettingProviders()
+    {
+        return (new self)->setHttpResponse('/1.4/bills/betting/providers/list', 'GET')->getResponse();
+    }
+
     public static function purchaseCablePlan($data)
     {
         return (new self)->setHttpResponse('/1.0/bills/cable/plans/purchase/create', 'POST', $data)->getResponse();
+    }
+
+    public static function cablePlans($data)
+    {
+        return (new self)->setHttpResponse('/1.0/bills/cable/plans/list', 'POST', $data)->getResponse();
     }
 
     public static function verifyCablePlanPurchase($data)
