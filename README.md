@@ -47,7 +47,7 @@ composer test
 
 ## Documentation
 
-Find the documentation for this package here: https://lpmatrix.github.io/laravel-redbiller-example/#/
+Find the documentation for this package here: lpmatrix.github.io/laravel-redbiller/
 
 ### Changelog
 
