@@ -5,7 +5,7 @@
  */
 return [
       /**
-     * Secret Key From Paystack Dashboard
+     * Secret Key From Redbiller Dashboard
      *
      */
     'secretKey' => getenv('REDBILLER_SECRET_KEY'),

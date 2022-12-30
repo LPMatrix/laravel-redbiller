@@ -149,4 +149,29 @@ class Redbiller
     {
         return (new self)->setHttpResponse('/1.0/collections/USSD/payments/list', 'GET', $data)->getResponse();
     }
+
+    public static function purchaseAirtime($data)
+    {
+        return (new self)->setHttpResponse('/1.0/bills/airtime/purchase/create', 'POST', $data)->getResponse();
+    }
+
+    public static function purchaseData($data)
+    {
+        return (new self)->setHttpResponse('/1.0/bills/data/plans/purchase/create', 'POST', $data)->getResponse();
+    }
+
+    public static function creditBettingAccount($data)
+    {
+        return (new self)->setHttpResponse('/1.4/bills/betting/account/payment/create', 'POST', $data)->getResponse();
+    }
+
+    public static function purchaseCablePlan($data)
+    {
+        return (new self)->setHttpResponse('/1.0/bills/cable/plans/purchase/create', 'POST', $data)->getResponse();
+    }
+
+    public static function purchaseDisco($data)
+    {
+        return (new self)->setHttpResponse('/1.0/bills/disco/purchase/create', 'POST', $data)->getResponse();
+    }
 }
